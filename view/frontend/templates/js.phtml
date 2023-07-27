@@ -1,0 +1,114 @@
+<?php
+
+?>
+<script>
+    require([
+        'jquery',
+        'goToLinks',
+        'customForms',
+        'scrollToFixed'
+    ], function($, GoToElement, customForms){
+        new GoToElement('[data-goto]', {
+            duration: 800
+        });
+
+        customForms.addSelectors({
+            checkbox: 'input[type="checkbox"]',
+        });
+        customForms.addSelectors({
+            select: 'select',
+        });
+
+        $('.page-header .header.content').scrollToFixed({
+            baseClassName: 'is-sticky'
+        });
+    });
+</script>
+
+<script type="text/x-magento-init">
+    {
+        "[data-accordion=\"data-accordion\"]": {
+            "mage/accordion": {
+                "media": "(min-width: 1024px)",
+                "openedState": "active",
+                "collapsible": true,
+                "active": false,
+                "multipleCollapsible": true,
+                "collapsibleElement": ".accordion-item",
+                "header": ".accordion__question",
+                "content": ".accordion__answer",
+                "trigger": ".accordion__question"
+            }
+        }
+    }
+</script>
+
+<script type="text/x-magento-init">
+    {
+        "[data-custom-lens]": {
+            "Buhmann_Assets/js/parallax-custom-lens": {
+                "framesSelector": ".custom-lens__desktop",
+                "lensSelector": ".custom-lens__lenses"
+            }
+        }
+    }
+</script>
+
+<script type="text/x-magento-init">
+    {
+        "[data-stagger-fade]": {
+            "Buhmann_Assets/js/stagger-fade": {
+                "framesSelector": ".custom-lens__desktop",
+                "lensSelector": ".custom-lens__lenses"
+            }
+        }
+    }
+</script>
+
+<script type="text/x-magento-init">
+    {
+        "[data-custom-vs]": {
+            "Buhmann_Assets/js/icon-pulsate": {
+                "panelLeftSelector": ".custom-vs__panel--left",
+                "panelRightSelector": ".custom-vs__panel--right",
+                "iconSelector": ".custom-vs__icon"
+            }
+        }
+    }
+</script>
+
+<script type="text/x-magento-init">
+    {
+        "[data-custom-graph]": {
+            "Buhmann_Assets/js/custom-graph": {
+                "competitionSelector": ".custom-graph__col-container--competition",
+                "lensablSelector": ".custom-graph__col-container--lensabl"
+            }
+        }
+    }
+</script>
+
+<script type="text/x-magento-init">
+    {
+        "[data-parallax=\"scroll\"]": {
+            "Buhmann_Assets/js/parallax": {}
+        }
+    }
+</script>
+
+<script type="text/x-magento-init">
+    {
+        "[data-parallax]": {
+            "Buhmann_Assets/js/parallax-bg": {}
+        }
+    }
+</script>
+
+<script type="text/x-magento-init">
+    {
+        ".loader-white-completed-fade-up, [data-loader-white]": {
+            "Buhmann_Assets/js/completed-fade-up": {}
+        }
+    }
+</script>
+
