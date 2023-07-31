@@ -12,7 +12,7 @@ define([
             speed: 0.9,
             media: '(min-width: 1024px)',
             competitionSelector: '',
-            lensablSelector: '',
+            testSelector: '',
             scale1: 0.97,
             scale2: 1.02,
         },
@@ -24,7 +24,7 @@ define([
         })(),
         _init: function(){
             this.compCol = this.element.find(this.options.competitionSelector);
-            this.lensCol = this.element.find(this.options.lensablSelector);
+            this.lensCol = this.element.find(this.options.testSelector);
             this.tween = this.getTween();
 
             let update = true;
